@@ -1,7 +1,7 @@
 <div class="row">
   <div class="container">
     <img class="left" <img style="width: 300px; height: 350px;"
- src="/assets/photo-2023.jpeg" alt="sdg">
+ src="/assets/old_profilepic.jpg" alt="am">
     <p> <br /> <br /> <br /> <br /> <br />  
         Abhijit Marar  <br />
         Ph.D. Student<br />
