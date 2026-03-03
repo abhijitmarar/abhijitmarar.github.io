@@ -1,0 +1,303 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans 3', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    color: #2a6496;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1a4a72;
+    text-decoration: underline;
+}
+
+/* ===== Navigation ===== */
+nav {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #222;
+    letter-spacing: 0.02em;
+}
+
+.nav-name:hover {
+    text-decoration: none;
+    color: #2a6496;
+}
+
+.nav-links a {
+    margin-left: 28px;
+    font-size: 0.95rem;
+    color: #555;
+    font-weight: 400;
+}
+
+.nav-links a:hover {
+    color: #2a6496;
+    text-decoration: none;
+}
+
+/* ===== Main Content ===== */
+main {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ===== About Section ===== */
+.about-section {
+    padding-top: 48px;
+    padding-bottom: 12px;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 4px;
+    letter-spacing: -0.01em;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2px;
+}
+
+.affiliation {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.bio {
+    margin-bottom: 14px;
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.contact-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 18px;
+}
+
+.contact-icons a {
+    color: #555;
+    font-size: 1.3rem;
+    transition: color 0.2s;
+}
+
+.contact-icons a:hover {
+    color: #2a6496;
+    text-decoration: none;
+}
+
+/* Photo */
+.about-photo {
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.about-photo img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.about-photo.no-photo {
+    width: 200px;
+    height: 240px;
+    background: #f0f0f0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Section Styling ===== */
+.section-divider {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 32px 0;
+}
+
+section {
+    padding: 12px 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #222;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 16px;
+    margin-top: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+h3:first-of-type {
+    margin-top: 0;
+}
+
+/* ===== Papers ===== */
+.paper {
+    margin-bottom: 22px;
+    padding-left: 16px;
+    border-left: 3px solid #e0e0e0;
+}
+
+.paper-title {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 2px;
+    line-height: 1.5;
+}
+
+.paper-authors {
+    font-size: 0.92rem;
+    color: #666;
+    margin-bottom: 2px;
+}
+
+.paper-venue {
+    font-size: 0.92rem;
+    color: #555;
+}
+
+.paper-venue em {
+    color: #444;
+}
+
+/* ===== Education ===== */
+.education-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.education-entry:last-child {
+    border-bottom: none;
+}
+
+.edu-degree {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 2px;
+}
+
+.edu-school {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.edu-year {
+    font-size: 0.9rem;
+    color: #888;
+    white-space: nowrap;
+    margin-left: 24px;
+}
+
+/* ===== Footer ===== */
+footer {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #aaa;
+    border-top: 1px solid #e8e8e8;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+    .about-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-photo {
+        width: 160px;
+    }
+
+    .contact-icons {
+        justify-content: center;
+    }
+
+    .education-entry {
+        flex-direction: column;
+    }
+
+    .edu-year {
+        margin-left: 0;
+        margin-top: 2px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        margin-left: 16px;
+    }
+
+    .nav-links a:first-child {
+        margin-left: 0;
+    }
+}
