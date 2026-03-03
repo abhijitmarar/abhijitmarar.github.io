@@ -3,171 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhijit Marar</title>
+    <title>Abhijit Marar | PhD Student, UT Dallas</title>
+    <meta name="description" content="Abhijit Marar - PhD Student in Operations Management at the University of Texas at Dallas. Research in Empirical Market Design, Matching Markets, and Operations Management in Education.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- Navigation -->
-<nav>
-    <div class="nav-container">
-        <a href="#" class="nav-name">Abhijit Marar</a>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#education">Education</a>
-            <a href="Marar_CV_2026.pdf" target="_blank">CV</a>
-        </div>
-    </div>
-</nav>
+<header class="site-header">
+    <nav class="nav-container">
+        <a href="#" class="nav-logo">Abhijit Marar</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="Marar_CV_2026.pdf" target="_blank">CV <i class="fas fa-file-pdf"></i></a></li>
+        </ul>
+    </nav>
+</header>
 
-<!-- Main Content -->
-<main>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="about-content">
-            <div class="about-text">
+<!-- Hero / About -->
+<section id="about" class="hero">
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-photo">
+                <div class="photo-wrapper">
+                    <img src="photo.jpg" alt="Abhijit Marar"
+                         onerror="this.style.display='none'; document.getElementById('photo-fallback').style.display='flex';">
+                    <div class="photo-fallback" id="photo-fallback">AM</div>
+                </div>
+            </div>
+            <div class="hero-text">
                 <h1>Abhijit Marar</h1>
-                <p class="subtitle">PhD Student in Operations Management</p>
-                <p class="affiliation">
-                    <a href="https://jindal.utdallas.edu/" target="_blank">Naveen Jindal School of Management</a>,
+                <p class="hero-title">PhD Student in Operations Management</p>
+                <p class="hero-affiliation">
+                    <a href="https://jindal.utdallas.edu/" target="_blank">Naveen Jindal School of Management</a><br>
                     <a href="https://www.utdallas.edu/" target="_blank">University of Texas at Dallas</a>
                 </p>
-
-                <p class="bio">
-                    I am a PhD student in Management Science with a concentration in Operations Management at
-                    the University of Texas at Dallas. My research interests lie in <strong>Empirical Market Design</strong>,
-                    <strong>Matching Markets</strong>, and <strong>Operations Management in Education</strong>.
-                    I am advised by <a href="https://iriosu.github.io/" target="_blank">Ignacio Rios</a>.
-                </p>
-                <p class="bio">
-                    Prior to joining UT Dallas, I obtained a PhD in Electrical Engineering from the University of Georgia,
-                    an MSc in Biomedical Engineering from Ruprecht-Karls Universit&auml;t Heidelberg, and a BSc in
-                    Electrical Engineering from the University of Illinois at Urbana-Champaign. I also have
-                    industry experience in photonics and scientific instrumentation.
-                </p>
-
-                <div class="contact-icons">
+                <div class="hero-social">
                     <a href="mailto:abhijit.marar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                     <a href="https://www.linkedin.com/in/abhijitmarar" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/abhijitmarar" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
-            <div class="about-photo">
-                <img src="photo.jpg" alt="Abhijit Marar" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');">
+        </div>
+
+        <div class="bio-section">
+            <p>
+                I am a PhD student in Management Science with a concentration in Operations Management at
+                the University of Texas at Dallas. My research interests lie in <strong>Empirical Market Design</strong>,
+                <strong>Matching Markets</strong>, and <strong>Operations Management in Education</strong>.
+                I am advised by <a href="https://iriosu.github.io/" target="_blank">Prof. Ignacio Rios</a>.
+            </p>
+            <p>
+                Prior to joining UT Dallas, I completed a PhD in Electrical Engineering from the
+                University of Georgia, where my work focused on advanced optical microscopy and
+                nanoscale imaging. I also hold an MSc in Biomedical Engineering from
+                Ruprecht-Karls Universit&auml;t Heidelberg and a BSc in Electrical Engineering
+                from the University of Illinois at Urbana-Champaign.
+            </p>
+        </div>
+
+        <div class="research-interests">
+            <span class="tag">Empirical Market Design</span>
+            <span class="tag">Matching Markets</span>
+            <span class="tag">Operations Management in Education</span>
+        </div>
+    </div>
+</section>
+
+<!-- Research -->
+<section id="research" class="section">
+    <div class="container">
+        <h2 class="section-title">Research</h2>
+
+        <div class="research-group">
+            <h3>Working Papers</h3>
+            <ol class="paper-list">
+                <li class="paper">
+                    <p class="paper-title">Designing Admissions Requirements: Balancing Access, Competition, and Student Outcomes</p>
+                    <p class="paper-authors">with <a href="https://iriosu.github.io/" target="_blank">Ignacio Rios</a></p>
+                    <span class="paper-status wip">Work in Progress</span>
+                </li>
+            </ol>
+        </div>
+
+        <div class="research-group">
+            <h3>Journal Publications</h3>
+            <ol class="paper-list">
+                <li class="paper">
+                    <p class="paper-title">Fundamental precision bounds for three-dimensional optical localization microscopy using self-interference digital holography</p>
+                    <p class="paper-authors">with Peter Kner</p>
+                    <p class="paper-venue"><em>Biomedical Optics Express</em>, 12(1), 20&ndash;40, 2021.</p>
+                </li>
+                <li class="paper">
+                    <p class="paper-title">Roadmap on Recent Progress in FINCH Technology</p>
+                    <p class="paper-authors">with Joseph Rosen, Simon Alford, Vijaykumar Anand, <em>et al.</em></p>
+                    <p class="paper-venue"><em>Journal of Imaging</em>, 7(10), 197, 2021.</p>
+                </li>
+                <li class="paper">
+                    <p class="paper-title">Cell-type&ndash;specific, multicolor labeling of endogenous proteins with split fluorescent protein tags in <em>Drosophila</em></p>
+                    <p class="paper-authors">with Rie Kamiyama, Kota Banzai, Peiwei Liu, Ryo Tamura, Fangchao Jiang, Miyuki Fitch, Jin Xie, and Daichi Kamiyama</p>
+                    <p class="paper-venue"><em>Proceedings of the National Academy of Sciences</em>, 118(23), e2024690118, 2021.</p>
+                </li>
+                <li class="paper">
+                    <p class="paper-title">Imaging of In Vitro and In Vivo Neurons in <em>Drosophila</em> Using Stochastic Optical Reconstruction Microscopy</p>
+                    <p class="paper-authors">with Melissa Ana Inal, Kathy Clara Bui, Shaoheng Li, Peter Kner, and Daichi Kamiyama</p>
+                    <p class="paper-venue"><em>Current Protocols</em>, 1(7), e203, 2021.</p>
+                </li>
+                <li class="paper">
+                    <p class="paper-title">Three-dimensional nanoscale localization of point-like objects using self-interference digital holography</p>
+                    <p class="paper-authors">with Peter Kner</p>
+                    <p class="paper-venue"><em>Optics Letters</em>, 45(2), 591&ndash;594, 2020.</p>
+                </li>
+                <li class="paper">
+                    <p class="paper-title">Charge-directed immobilization of bacteriophage on nanostructured electrode for whole-cell electrochemical biosensors</p>
+                    <p class="paper-authors">with Yan Zhou, Peter Kner, and Ramaraja Ramasamy</p>
+                    <p class="paper-venue"><em>Analytical Chemistry</em>, 89(11), 5734&ndash;5741, 2017.</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2024 &ndash; Present</span>
+                    <h4>Ph.D. in Management Science</h4>
+                    <p class="timeline-detail">Concentration: Operations Management</p>
+                    <p class="timeline-school">University of Texas at Dallas</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2015 &ndash; 2020</span>
+                    <h4>Ph.D. in Electrical Engineering</h4>
+                    <p class="timeline-school">University of Georgia</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2013 &ndash; 2015</span>
+                    <h4>M.Sc. in Biomedical Engineering</h4>
+                    <p class="timeline-school">Ruprecht-Karls Universit&auml;t Heidelberg</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2009 &ndash; 2015</span>
+                    <h4>B.Sc. in Electrical Engineering</h4>
+                    <p class="timeline-school">University of Illinois at Urbana-Champaign</p>
+                </div>
             </div>
         </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- Research Section -->
-    <section id="research">
-        <h2>Research</h2>
-
-        <h3>Work in Progress</h3>
-        <div class="paper">
-            <p class="paper-title">"Designing Admissions Requirements: Balancing Access, Competition, and Student Outcomes"</p>
-            <p class="paper-authors">with <a href="https://iriosu.github.io/" target="_blank">Ignacio Rios</a></p>
-        </div>
-
-        <h3>Publications</h3>
-
-        <div class="paper">
-            <p class="paper-title">"Fundamental precision bounds for three-dimensional optical localization microscopy using self-interference digital holography"</p>
-            <p class="paper-authors">with Peter Kner</p>
-            <p class="paper-venue"><em>Biomedical Optics Express</em>, 12(1), 20&ndash;40, 2021.</p>
-        </div>
-
-        <div class="paper">
-            <p class="paper-title">"Roadmap on Recent Progress in FINCH Technology"</p>
-            <p class="paper-authors">with Joseph Rosen, Simon Alford, Vijaykumar Anand, Jonathan Art, Petr Bouchal, Zden&#283;k Bouchal, Munkh-Uchral Erdenebat, Lingling Huang, Ayumi Ishii, Saulius Juodkazis, Nam Kim, Peter Kner, Takako Koujin, Yuichi Kozawa, Dong Liang, Jun Liu, Christopher Mann, Atsushi Matsuda, Teruyoshi Nobukawa, Takanori Nomura, Ryutaro Oi, Mariana Potcoava, Tatsuki Tahara, Bang Le Thanh, and Hongqiang Zhou</p>
-            <p class="paper-venue"><em>Journal of Imaging</em>, 7(10), 197, 2021.</p>
-        </div>
-
-        <div class="paper">
-            <p class="paper-title">"Cell-type&ndash;specific, multicolor labeling of endogenous proteins with split fluorescent protein tags in Drosophila"</p>
-            <p class="paper-authors">with Rie Kamiyama, Kota Banzai, Peiwei Liu, Ryo Tamura, Fangchao Jiang, Miyuki Fitch, Jin Xie, and Daichi Kamiyama</p>
-            <p class="paper-venue"><em>Proceedings of the National Academy of Sciences</em>, 118(23), e2024690118, 2021.</p>
-        </div>
-
-        <div class="paper">
-            <p class="paper-title">"Imaging of In Vitro and In Vivo Neurons in Drosophila Using Stochastic Optical Reconstruction Microscopy"</p>
-            <p class="paper-authors">with Melissa Ana Inal, Kathy Clara Bui, Shaoheng Li, Peter Kner, and Daichi Kamiyama</p>
-            <p class="paper-venue"><em>Current Protocols</em>, 1(7), e203, 2021.</p>
-        </div>
-
-        <div class="paper">
-            <p class="paper-title">"Three-dimensional nanoscale localization of point-like objects using self-interference digital holography"</p>
-            <p class="paper-authors">with Peter Kner</p>
-            <p class="paper-venue"><em>Optics Letters</em>, 45(2), 591&ndash;594, 2020.</p>
-        </div>
-
-        <div class="paper">
-            <p class="paper-title">"Charge-directed immobilization of bacteriophage on nanostructured electrode for whole-cell electrochemical biosensors"</p>
-            <p class="paper-authors">with Yan Zhou, Peter Kner, and Ramaraja Ramasamy</p>
-            <p class="paper-venue"><em>Analytical Chemistry</em>, 89(11), 5734&ndash;5741, 2017.</p>
-        </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-
-        <div class="education-entry">
-            <div class="edu-main">
-                <p class="edu-degree">Ph.D. in Management Science (Operations Management)</p>
-                <p class="edu-school">University of Texas at Dallas</p>
-            </div>
-            <div class="edu-details">
-                <span class="edu-year">2024 &ndash; Present</span>
-            </div>
-        </div>
-
-        <div class="education-entry">
-            <div class="edu-main">
-                <p class="edu-degree">Ph.D. in Electrical Engineering</p>
-                <p class="edu-school">University of Georgia</p>
-            </div>
-            <div class="edu-details">
-                <span class="edu-year">2015 &ndash; 2020</span>
-            </div>
-        </div>
-
-        <div class="education-entry">
-            <div class="edu-main">
-                <p class="edu-degree">M.Sc. in Biomedical Engineering</p>
-                <p class="edu-school">Ruprecht-Karls Universit&auml;t Heidelberg</p>
-            </div>
-            <div class="edu-details">
-                <span class="edu-year">2013 &ndash; 2015</span>
-            </div>
-        </div>
-
-        <div class="education-entry">
-            <div class="edu-main">
-                <p class="edu-degree">B.Sc. in Electrical Engineering</p>
-                <p class="edu-school">University of Illinois at Urbana-Champaign</p>
-            </div>
-            <div class="edu-details">
-                <span class="edu-year">2009 &ndash; 2015</span>
-            </div>
-        </div>
-    </section>
-
-</main>
+    </div>
+</section>
 
 <!-- Footer -->
-<footer>
-    <p>&copy; 2026 Abhijit Marar</p>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-social">
+            <a href="mailto:abhijit.marar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/abhijitmarar" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/abhijitmarar" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2026 Abhijit Marar. All rights reserved.</p>
+    </div>
 </footer>
+
+<script>
+// Mobile nav toggle
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+
+// Close mobile nav on link click
+document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.remove('active');
+    });
+});
+
+// Sticky nav shadow on scroll
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('.site-header');
+    if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+</script>
 
 </body>
 </html>
