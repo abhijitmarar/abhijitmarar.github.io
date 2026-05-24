@@ -379,6 +379,24 @@ a:hover {
     margin-bottom: 0;
 }
 
+/* --- Paper topic subsection (within research-group) --- */
+.paper-topic {
+    margin-bottom: 28px;
+}
+
+.paper-topic:last-child {
+    margin-bottom: 0;
+}
+
+.paper-topic h4 {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--color-text);
+    margin: 0 0 12px 0;
+}
+
 /* --- Sections (Research, etc.) --- */
 .section {
     padding: 40px 0 24px;
@@ -593,30 +611,30 @@ a:hover {
     --color-faint: #6e7d92;          /* faint blue-gray */
     --color-link: #d4a83a;           /* ND gold */
     --color-link-hover: #f3c84e;     /* brighter gold */
-    --color-bg: #0c2340;             /* ND navy */
-    --color-border: #1d3a5d;         /* lighter navy */
-    --color-border-soft: #14304f;    /* darker subtle border */
-    --color-highlight: #1a3556;      /* callout bg */
+    --color-bg: #02132f;             /* deep ND navy */
+    --color-border: #102a48;         /* mid navy */
+    --color-border-soft: #0a1f3e;    /* subtle navy */
+    --color-highlight: #0e2545;      /* callout / surface */
     --color-highlight-border: #d4a83a;
 }
 
 [data-theme="dark"] .site-header {
-    background: rgba(12, 35, 64, 0.95);
+    background: rgba(2, 19, 47, 0.96);
 }
 
 [data-theme="dark"] .photo-wrapper {
-    background: #163052;
+    background: #0e2545;
 }
 
 [data-theme="dark"] .photo-fallback {
-    background: #163052;
+    background: #0e2545;
     color: var(--color-link);
 }
 
 [data-theme="dark"] .paper-status {
-    background: #1a3556;
+    background: #0e2545;
     color: var(--color-link);
-    border-color: #2e4a70;
+    border-color: #1c3a5f;
 }
 
 [data-theme="dark"] .nav-links {
