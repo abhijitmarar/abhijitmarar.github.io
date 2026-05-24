@@ -455,6 +455,18 @@ a:hover {
     margin-bottom: 2px;
 }
 
+.paper-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.paper-title a:hover {
+    color: var(--color-link);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 .paper-authors {
     font-family: var(--font-serif);
     font-size: 0.97rem;
