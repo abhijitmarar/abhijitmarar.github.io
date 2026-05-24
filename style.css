@@ -121,6 +121,17 @@ a:hover {
     text-underline-offset: 4px;
 }
 
+.nav-links a.is-active {
+    color: var(--color-link);
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-link);
+    padding-bottom: 1px;
+}
+
+.nav-links a.is-active:hover {
+    text-decoration: none;
+}
+
 /* --- Hero / About Section --- */
 .hero {
     padding: 50px 0 30px;
@@ -427,6 +438,88 @@ a:hover {
     background: #fff5d6;
     border: 1px solid #e8d088;
     font-style: italic;
+}
+
+/* --- Inner page header (Research, Teaching pages) --- */
+.page-header {
+    padding: 50px 0 20px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.page-title {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-text);
+    line-height: 1.2;
+}
+
+.page-subtitle {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    color: var(--color-muted);
+    font-style: italic;
+    margin-top: 6px;
+}
+
+.page-aside {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px dotted var(--color-border);
+    font-size: 0.95rem;
+    color: var(--color-muted);
+    font-style: italic;
+}
+
+.empty-note {
+    color: var(--color-muted);
+    font-style: italic;
+    padding: 8px 0 4px;
+}
+
+/* --- Teaching & Talks lists --- */
+.teaching-list,
+.talk-list {
+    list-style: none;
+    padding: 0;
+}
+
+.teaching-item,
+.talk-item {
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+.teaching-item + .teaching-item,
+.talk-item + .talk-item {
+    border-top: 1px dotted var(--color-border);
+}
+
+.teaching-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: baseline;
+}
+
+.teaching-role {
+    color: var(--color-muted);
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.teaching-year,
+.talk-date {
+    color: var(--color-faint);
+    font-size: 0.9rem;
+    font-variant-numeric: oldstyle-nums;
+    white-space: nowrap;
+}
+
+.talk-venue {
+    font-style: italic;
+    color: var(--color-muted);
 }
 
 /* --- Footer --- */
