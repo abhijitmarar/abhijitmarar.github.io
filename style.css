@@ -390,11 +390,11 @@ a:hover {
 
 .paper-topic h4 {
     font-family: var(--font-serif);
-    font-size: 1.05rem;
+    font-size: 1.4rem;
     font-weight: 600;
     font-style: italic;
     color: var(--color-text);
-    margin: 0 0 12px 0;
+    margin: 0 0 16px 0;
 }
 
 /* --- Sections (Research, etc.) --- */
@@ -611,30 +611,30 @@ a:hover {
     --color-faint: #6e7d92;          /* faint blue-gray */
     --color-link: #d4a83a;           /* ND gold */
     --color-link-hover: #f3c84e;     /* brighter gold */
-    --color-bg: #02132f;             /* deep ND navy */
-    --color-border: #102a48;         /* mid navy */
-    --color-border-soft: #0a1f3e;    /* subtle navy */
-    --color-highlight: #0e2545;      /* callout / surface */
+    --color-bg: #010818;             /* very dark navy */
+    --color-border: #0a1d38;         /* mid navy for definition */
+    --color-border-soft: #051124;    /* subtle navy */
+    --color-highlight: #091a30;      /* callout / surface */
     --color-highlight-border: #d4a83a;
 }
 
 [data-theme="dark"] .site-header {
-    background: rgba(2, 19, 47, 0.96);
+    background: rgba(1, 8, 24, 0.96);
 }
 
 [data-theme="dark"] .photo-wrapper {
-    background: #0e2545;
+    background: #091a30;
 }
 
 [data-theme="dark"] .photo-fallback {
-    background: #0e2545;
+    background: #091a30;
     color: var(--color-link);
 }
 
 [data-theme="dark"] .paper-status {
-    background: #0e2545;
+    background: #091a30;
     color: var(--color-link);
-    border-color: #1c3a5f;
+    border-color: #142d4f;
 }
 
 [data-theme="dark"] .nav-links {
