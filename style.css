@@ -485,11 +485,16 @@ a:hover {
     font-style: italic;
 }
 
-/* --- Inner page header (Research, Teaching pages) --- */
+/* --- Inner page header (Research, Teaching pages) — kept for backward compat --- */
 .page-header {
     padding: 50px 0 20px;
     margin-bottom: 28px;
     border-bottom: 1px solid var(--color-border);
+}
+
+/* When no page-header, give the first content section breathing room below the nav */
+main > .research-group:first-of-type {
+    padding-top: 50px;
 }
 
 .page-title {
