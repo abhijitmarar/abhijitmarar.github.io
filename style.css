@@ -470,6 +470,7 @@ a:hover {
 .paper-authors {
     font-family: var(--font-serif);
     font-size: 0.97rem;
+    font-weight: normal;
     color: var(--color-muted);
     margin-bottom: 2px;
     font-style: italic;
