@@ -25,7 +25,7 @@
     <meta property="og:url" content="https://abhijitmarar.github.io/">
     <meta property="og:title" content="Abhijit Marar — PhD Student in Analytics, University of Notre Dame">
     <meta property="og:description" content="PhD Student in Analytics at the Mendoza College of Business, University of Notre Dame. Research in Empirical Market Design, Matching Markets, and Operations Management in Education.">
-    <meta property="og:image" content="https://abhijitmarar.github.io/photo.jpg">
+    <meta property="og:image" content="https://abhijitmarar.github.io/final_website_405x720_dropin.jpg">
     <meta property="profile:first_name" content="Abhijit">
     <meta property="profile:last_name" content="Marar">
 
@@ -34,7 +34,7 @@
     <meta name="twitter:url" content="https://abhijitmarar.github.io/">
     <meta name="twitter:title" content="Abhijit Marar — PhD Student in Analytics, University of Notre Dame">
     <meta name="twitter:description" content="PhD Student in Analytics at the Mendoza College of Business, University of Notre Dame.">
-    <meta name="twitter:image" content="https://abhijitmarar.github.io/photo.jpg">
+    <meta name="twitter:image" content="https://abhijitmarar.github.io/final_website_405x720_dropin.jpg">
 
     <link rel="stylesheet" href="style.css?v=3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -51,7 +51,7 @@
       "givenName": "Abhijit",
       "familyName": "Marar",
       "url": "https://abhijitmarar.github.io/",
-      "image": "https://abhijitmarar.github.io/photo.jpg",
+      "image": "https://abhijitmarar.github.io/final_website_405x720_dropin.jpg",
       "jobTitle": "PhD Student in Analytics",
       "description": "PhD Student in Analytics at the Mendoza College of Business, University of Notre Dame. Research in Empirical Market Design, Matching Markets, and Operations Management in Education.",
       "affiliation": {
@@ -122,8 +122,14 @@
         <!-- Left column: portrait + identity + social -->
         <aside class="hero-side">
             <div class="photo-wrapper">
-                <img src="photo.jpg?v=h1e" alt="Abhijit Marar"
-                     onerror="this.style.display='none'; document.getElementById('photo-fallback').style.display='flex';">
+                <picture>
+                    <source type="image/webp"
+                            srcset="final_website_600w.webp 600w, final_website_1200w_retina.webp 1200w"
+                            sizes="(max-width: 768px) 220px, 260px">
+                    <img src="final_website_405x720_dropin.jpg" alt="Abhijit Marar"
+                         width="405" height="720"
+                         onerror="this.style.display='none'; document.getElementById('photo-fallback').style.display='flex';">
+                </picture>
                 <div class="photo-fallback" id="photo-fallback">AM</div>
             </div>
             <div class="hero-identity">
