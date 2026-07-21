@@ -304,21 +304,8 @@ a:hover {
 
 .ul-interests li {
     padding: 3px 0;
-    position: relative;
-    padding-left: 18px;
     font-size: 1rem;
     line-height: 1.5;
-}
-
-.ul-interests li::before {
-    content: "\f111"; /* fa-circle */
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    font-size: 0.45rem;
-    position: absolute;
-    left: 0;
-    top: 0.55em;
-    color: var(--color-link);
 }
 
 .ul-edu li {
