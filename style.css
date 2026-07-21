@@ -11,16 +11,16 @@
 }
 
 :root {
-    --color-text: #1a1a1a;
-    --color-muted: #555;
-    --color-faint: #888;
+    --color-text: #1f1b16;
+    --color-muted: #5a5245;
+    --color-faint: #736b5e;
     --color-link: #0c2340;
-    --color-link-hover: #2a5a8c;
-    --color-bg: #ffffff;
-    --color-border: #e0e0e0;
-    --color-border-soft: #efefef;
-    --color-highlight: #fff8d6;
-    --color-highlight-border: #d4b95e;
+    --color-link-hover: #2b5680;
+    --color-bg: #faf5ec;
+    --color-border: #e0d7ca;
+    --color-border-soft: #ece5d9;
+    --color-highlight: #fcedbb;
+    --color-highlight-border: #cbb057;
     --font-serif: 'EB Garamond', 'Latin Modern Roman', 'Computer Modern Serif', Georgia, 'Times New Roman', serif;
     --max-width: 880px;
 }
@@ -63,7 +63,7 @@ a:hover {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.97);
+    background: rgba(250, 245, 236, 0.97);
     border-bottom: 1px solid var(--color-border);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
@@ -157,7 +157,7 @@ a:hover {
     overflow: hidden;
     border: 1px solid var(--color-border);
     margin: 0 auto 16px;
-    background: #f7f7f7;
+    background: #f3ece1;
 }
 
 .photo-wrapper img {
@@ -171,7 +171,7 @@ a:hover {
     display: none;
     width: 100%;
     height: 100%;
-    background: #f3f3f3;
+    background: #efe7db;
     color: var(--color-muted);
     font-family: var(--font-serif);
     font-size: 3rem;
@@ -492,9 +492,9 @@ a:hover {
     padding: 2px 10px;
     font-size: 0.82rem;
     font-weight: 500;
-    color: #876300;
-    background: #fff5d6;
-    border: 1px solid #e8d088;
+    color: #7d5b00;
+    background: #fbeabc;
+    border: 1px solid #ddc37a;
     font-style: italic;
 }
 
@@ -655,11 +655,6 @@ main > .research-group:first-of-type {
     border-color: #142d4f;
 }
 
-[data-theme="dark"] .nav-links {
-    /* mobile dropdown background — light mode hardcodes #fff in the media query */
-    background: var(--color-bg);
-}
-
 /* --- Responsive --- */
 @media (max-width: 768px) {
     .nav-toggle {
@@ -673,11 +668,11 @@ main > .research-group:first-of-type {
         left: 0;
         right: 0;
         flex-direction: column;
-        background: #fff;
+        background: var(--color-bg);
         padding: 12px 24px;
         gap: 0;
         border-bottom: 1px solid var(--color-border);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+        box-shadow: 0 4px 8px rgba(92, 72, 44, 0.07);
     }
 
     .nav-links.active {
