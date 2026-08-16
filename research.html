@@ -31,7 +31,7 @@
     <meta name="twitter:title" content="Research | Abhijit Marar">
     <meta name="twitter:description" content="Working papers and journal publications by Abhijit Marar.">
 
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,22 +62,12 @@
 
 <main class="container">
 
-<section class="research-group">
-    <h3>Work in Progress</h3>
-    <ol class="paper-list">
-        <li class="paper">
-            <p class="paper-title">Designing Admissions Requirements: Balancing Access, Competition, and Student Outcomes <span class="paper-authors">with Ignacio Rios</span></p>
-        </li>
-    </ol>
-</section>
+<div class="paper-filters" role="group" aria-label="Filter papers by status">
+    <button type="button" class="filter-btn is-active" data-filter="published" aria-pressed="true">Published (By Topic)</button>
+    <button type="button" class="filter-btn" data-filter="working" aria-pressed="false">Working Papers</button>
+</div>
 
-<section class="research-group">
-    <h3>Working Papers</h3>
-</section>
-
-<section class="research-group">
-    <h3>Journal Publications (By Topic)</h3>
-
+<section class="research-group" data-group="published">
     <div class="paper-topic">
         <h4>Optical Microscopy</h4>
         <ol class="paper-list">
@@ -107,6 +97,14 @@
             </li>
         </ol>
     </div>
+</section>
+
+<section class="research-group" data-group="working">
+    <ol class="paper-list">
+        <li class="paper">
+            <p class="paper-title">Designing Admissions Requirements: Balancing Access, Competition, and Student Outcomes <span class="paper-authors">with Ignacio Rios</span></p>
+        </li>
+    </ol>
 </section>
 
 </main>
@@ -146,6 +144,36 @@ document.querySelectorAll('.nav-links a').forEach(function(link) {
         try { localStorage.setItem('theme', next); } catch (e) {}
         updateIcon();
     });
+})();
+</script>
+
+<script>
+// Toggle between Published and Working Papers
+(function () {
+    var buttons = Array.prototype.slice.call(document.querySelectorAll('.filter-btn'));
+    if (!buttons.length) return;
+    var sections = Array.prototype.slice.call(document.querySelectorAll('.research-group[data-group]'));
+
+    function apply(filter) {
+        sections.forEach(function (s) {
+            s.hidden = s.getAttribute('data-group') !== filter;
+        });
+    }
+
+    buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            buttons.forEach(function (b) {
+                var active = (b === btn);
+                b.classList.toggle('is-active', active);
+                b.setAttribute('aria-pressed', active ? 'true' : 'false');
+            });
+            apply(btn.getAttribute('data-filter'));
+        });
+    });
+
+    // Show the default tab (Published) on load.
+    var initial = document.querySelector('.filter-btn.is-active') || buttons[0];
+    apply(initial.getAttribute('data-filter'));
 })();
 </script>
 

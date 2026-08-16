@@ -522,6 +522,12 @@ a:hover {
     border-top: 1px dotted var(--color-border);
 }
 
+/* Avoid a stray divider above the first visible paper when a preceding
+   paper in the same list is filtered out. */
+.paper[hidden] + .paper {
+    border-top: none;
+}
+
 .paper-title {
     font-family: var(--font-serif);
     font-size: 1.05rem;
@@ -610,6 +616,58 @@ main > .research-group:first-of-type {
 .empty-note {
     color: var(--color-muted);
     padding: 8px 0 4px;
+}
+
+/* --- Research paper status filters --- */
+.paper-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 28px;
+    padding-top: 40px;
+    margin-bottom: 22px;
+}
+
+/* Cancel the 50px top padding the first-of-type rule would otherwise add to
+   the first section, so the gap under the filter bar stays constant no matter
+   which section is the first one still visible after filtering. */
+main > .paper-filters + .research-group {
+    padding-top: 0;
+}
+
+.filter-btn {
+    font-family: var(--font-serif);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--color-muted);
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: 0;
+    padding: 7px 18px;
+    cursor: pointer;
+    transition: color 0.15s, background-color 0.15s, border-color 0.15s;
+}
+
+.filter-btn:hover {
+    color: var(--color-link);
+    border-color: var(--color-highlight-border);
+}
+
+.filter-btn:focus-visible {
+    outline: 2px solid var(--color-highlight-border);
+    outline-offset: 2px;
+}
+
+.filter-btn.is-active {
+    color: var(--color-bg);
+    background: var(--color-link);
+    border-color: var(--color-link);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .filter-btn { transition: none; }
 }
 
 /* --- Teaching & Talks lists --- */
