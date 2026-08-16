@@ -724,7 +724,6 @@ main > .research-group:first-of-type {
 
 .teaching-role {
     color: var(--color-muted);
-    font-style: italic;
     font-size: 0.95rem;
 }
 
