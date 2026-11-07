@@ -385,6 +385,21 @@ a:hover {
     line-height: 1.5;
 }
 
+/* Interests come in two labelled groups: Topics, then Methods. */
+.interest-group + .interest-group {
+    margin-top: 12px;
+}
+
+.interest-group h4 {
+    font-family: var(--font-serif);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 2px;
+}
+
 /* Two lines per entry: degree and year share the top line, school beneath. */
 .ul-edu li {
     display: grid;
